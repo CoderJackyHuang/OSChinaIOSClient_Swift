@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		696ED25C1AA544550020CC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED25B1AA544550020CC04 /* AppDelegate.swift */; };
+		696ED26D1AA544550020CC04 /* OSChinaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED26C1AA544550020CC04 /* OSChinaClientTests.swift */; };
+		696ED2781AA549C20020CC04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2771AA549C20020CC04 /* Images.xcassets */; };
+		696ED2981AA5526F0020CC04 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2961AA5526F0020CC04 /* Alamofire.swift */; };
+		696ED2991AA5526F0020CC04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2971AA5526F0020CC04 /* Info.plist */; };
+		696ED2B91AA55A930020CC04 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696ED2B31AA55A930020CC04 /* libzbar.a */; };
+		696ED2BA1AA55A930020CC04 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2B51AA55A930020CC04 /* zbar-back.png */; };
+		696ED2BB1AA55A930020CC04 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2B61AA55A930020CC04 /* zbar-help.html */; };
+		696ED2BC1AA55A930020CC04 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2B71AA55A930020CC04 /* zbar-helpicons.png */; };
+		696ED2BD1AA55A930020CC04 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2B81AA55A930020CC04 /* zbar-samples.png */; };
+		696ED2C11AA55B790020CC04 /* HYBSynthesizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2C01AA55B790020CC04 /* HYBSynthesizeController.swift */; };
+		696ED2C31AA55BB10020CC04 /* HYBBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2C21AA55BB10020CC04 /* HYBBaseController.swift */; };
+		696ED2C51AA55CA60020CC04 /* HYBParentTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2C41AA55CA60020CC04 /* HYBParentTableController.swift */; };
+		696ED2C71AA55D0B0020CC04 /* HYBRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2C61AA55D0B0020CC04 /* HYBRefreshController.swift */; };
+		696ED2C91AA55F3B0020CC04 /* HYBAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2C81AA55F3B0020CC04 /* HYBAnswerController.swift */; };
+		696ED2CB1AA55FC20020CC04 /* HYBTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2CA1AA55FC20020CC04 /* HYBTweetController.swift */; };
+		696ED2CD1AA5600D0020CC04 /* HYBMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2CC1AA5600D0020CC04 /* HYBMineController.swift */; };
+		696ED2CF1AA560620020CC04 /* HYBMoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2CE1AA560620020CC04 /* HYBMoreController.swift */; };
+		696ED2D11AA561250020CC04 /* HYBRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2D01AA561250020CC04 /* HYBRootTabBarController.swift */; };
+		696ED2D71AA57E4C0020CC04 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2D41AA57E4C0020CC04 /* GlobalDefine.swift */; };
+		696ED2D81AA57E4C0020CC04 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2D51AA57E4C0020CC04 /* Server.swift */; };
+		696ED2D91AA57E4C0020CC04 /* Shorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2D61AA57E4C0020CC04 /* Shorthand.swift */; };
+		696ED2DF1AA57EC90020CC04 /* NSStringCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2DC1AA57EC90020CC04 /* NSStringCommonExtension.swift */; };
+		696ED2E01AA57EC90020CC04 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2DE1AA57EC90020CC04 /* UIViewExtension.swift */; };
+		696ED2E51AA57FC40020CC04 /* HYBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2E31AA57FC40020CC04 /* HYBProgressHUD.swift */; };
+		696ED2E61AA57FC40020CC04 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2E41AA57FC40020CC04 /* ProgressHUD.bundle */; };
+		696ED2ED1AA593220020CC04 /* HYBLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2EB1AA593220020CC04 /* HYBLoginController.swift */; };
+		696ED2EE1AA593220020CC04 /* HYBLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2EC1AA593220020CC04 /* HYBLoginController.xib */; };
+		699627FF1AA5B47000F779EE /* HYBBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		696ED2671AA544550020CC04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696ED24E1AA544550020CC04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 696ED2551AA544550020CC04;
+			remoteInfo = OSChinaClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		696ED2561AA544550020CC04 /* OSChinaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChinaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		696ED25A1AA544550020CC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696ED25B1AA544550020CC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		696ED2661AA544550020CC04 /* OSChinaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSChinaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		696ED26B1AA544550020CC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696ED26C1AA544550020CC04 /* OSChinaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSChinaClientTests.swift; sourceTree = "<group>"; };
+		696ED2771AA549C20020CC04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		696ED2951AA5526F0020CC04 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		696ED2961AA5526F0020CC04 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		696ED2971AA5526F0020CC04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696ED29A1AA559FA0020CC04 /* Objective-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Bridging-Header.h"; sourceTree = "<group>"; };
+		696ED29F1AA55A920020CC04 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		696ED2A01AA55A920020CC04 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		696ED2A11AA55A920020CC04 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		696ED2A21AA55A920020CC04 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		696ED2A31AA55A920020CC04 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		696ED2A41AA55A920020CC04 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		696ED2A51AA55A920020CC04 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		696ED2A61AA55A920020CC04 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		696ED2A71AA55A920020CC04 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		696ED2A81AA55A920020CC04 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		696ED2A91AA55A920020CC04 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		696ED2AA1AA55A920020CC04 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		696ED2AB1AA55A920020CC04 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		696ED2AC1AA55A930020CC04 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		696ED2AD1AA55A930020CC04 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		696ED2AE1AA55A930020CC04 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		696ED2AF1AA55A930020CC04 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		696ED2B01AA55A930020CC04 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		696ED2B11AA55A930020CC04 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		696ED2B21AA55A930020CC04 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		696ED2B31AA55A930020CC04 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		696ED2B51AA55A930020CC04 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		696ED2B61AA55A930020CC04 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		696ED2B71AA55A930020CC04 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		696ED2B81AA55A930020CC04 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		696ED2C01AA55B790020CC04 /* HYBSynthesizeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBSynthesizeController.swift; path = Controllers/SynthesizeControllers/HYBSynthesizeController.swift; sourceTree = "<group>"; };
+		696ED2C21AA55BB10020CC04 /* HYBBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseController.swift; path = Controllers/BaseControllers/HYBBaseController.swift; sourceTree = "<group>"; };
+		696ED2C41AA55CA60020CC04 /* HYBParentTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBParentTableController.swift; path = Controllers/BaseControllers/HYBParentTableController.swift; sourceTree = "<group>"; };
+		696ED2C61AA55D0B0020CC04 /* HYBRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBRefreshController.swift; path = Controllers/BaseControllers/HYBRefreshController.swift; sourceTree = "<group>"; };
+		696ED2C81AA55F3B0020CC04 /* HYBAnswerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBAnswerController.swift; path = Controllers/AnswerControllers/HYBAnswerController.swift; sourceTree = "<group>"; };
+		696ED2CA1AA55FC20020CC04 /* HYBTweetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBTweetController.swift; path = Controllers/TweetControllers/HYBTweetController.swift; sourceTree = "<group>"; };
+		696ED2CC1AA5600D0020CC04 /* HYBMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBMineController.swift; path = Controllers/MineControllers/HYBMineController.swift; sourceTree = "<group>"; };
+		696ED2CE1AA560620020CC04 /* HYBMoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBMoreController.swift; path = Controllers/MoreControllers/HYBMoreController.swift; sourceTree = "<group>"; };
+		696ED2D01AA561250020CC04 /* HYBRootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBRootTabBarController.swift; path = Controllers/BaseControllers/HYBRootTabBarController.swift; sourceTree = "<group>"; };
+		696ED2D41AA57E4C0020CC04 /* GlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
+		696ED2D51AA57E4C0020CC04 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		696ED2D61AA57E4C0020CC04 /* Shorthand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shorthand.swift; sourceTree = "<group>"; };
+		696ED2DC1AA57EC90020CC04 /* NSStringCommonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringCommonExtension.swift; sourceTree = "<group>"; };
+		696ED2DE1AA57EC90020CC04 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		696ED2E31AA57FC40020CC04 /* HYBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYBProgressHUD.swift; sourceTree = "<group>"; };
+		696ED2E41AA57FC40020CC04 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		696ED2EB1AA593220020CC04 /* HYBLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBLoginController.swift; path = Controllers/MoreControllers/LoginController/HYBLoginController.swift; sourceTree = "<group>"; };
+		696ED2EC1AA593220020CC04 /* HYBLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBLoginController.xib; path = Controllers/MoreControllers/LoginController/HYBLoginController.xib; sourceTree = "<group>"; };
+		699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseRequest.swift; path = Utilities/Network/HYBBaseRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		696ED2531AA544550020CC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696ED2B91AA55A930020CC04 /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696ED2631AA544550020CC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		696ED24D1AA544550020CC04 = {
+			isa = PBXGroup;
+			children = (
+				696ED2581AA544550020CC04 /* OSChinaClient */,
+				696ED2691AA544550020CC04 /* OSChinaClientTests */,
+				696ED2571AA544550020CC04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		696ED2571AA544550020CC04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2561AA544550020CC04 /* OSChinaClient.app */,
+				696ED2661AA544550020CC04 /* OSChinaClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		696ED2581AA544550020CC04 /* OSChinaClient */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2BE1AA55AE80020CC04 /* Utilities */,
+				696ED2931AA5526F0020CC04 /* OpenSourceLibraries */,
+				696ED2871AA551590020CC04 /* Views */,
+				696ED2801AA5511B0020CC04 /* Models */,
+				696ED2791AA54D720020CC04 /* Controllers */,
+				696ED2761AA544DE0020CC04 /* Delegates */,
+				696ED2591AA544550020CC04 /* Supporting Files */,
+			);
+			path = OSChinaClient;
+			sourceTree = "<group>";
+		};
+		696ED2591AA544550020CC04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2771AA549C20020CC04 /* Images.xcassets */,
+				696ED25A1AA544550020CC04 /* Info.plist */,
+				696ED29A1AA559FA0020CC04 /* Objective-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696ED2691AA544550020CC04 /* OSChinaClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				696ED26C1AA544550020CC04 /* OSChinaClientTests.swift */,
+				696ED26A1AA544550020CC04 /* Supporting Files */,
+			);
+			path = OSChinaClientTests;
+			sourceTree = "<group>";
+		};
+		696ED26A1AA544550020CC04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				696ED26B1AA544550020CC04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696ED2761AA544DE0020CC04 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				696ED25B1AA544550020CC04 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		696ED2791AA54D720020CC04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED27F1AA54DB70020CC04 /* MoreControllers */,
+				696ED27E1AA54DA90020CC04 /* MineControllers */,
+				696ED27D1AA54DA10020CC04 /* TweetControllers */,
+				696ED27C1AA54D970020CC04 /* AnswerControllers */,
+				696ED27B1AA54D830020CC04 /* SynthesizeControllers */,
+				696ED27A1AA54D780020CC04 /* BaseControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		696ED27A1AA54D780020CC04 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2C21AA55BB10020CC04 /* HYBBaseController.swift */,
+				696ED2C41AA55CA60020CC04 /* HYBParentTableController.swift */,
+				696ED2C61AA55D0B0020CC04 /* HYBRefreshController.swift */,
+				696ED2D01AA561250020CC04 /* HYBRootTabBarController.swift */,
+			);
+			name = BaseControllers;
+			sourceTree = "<group>";
+		};
+		696ED27B1AA54D830020CC04 /* SynthesizeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2C01AA55B790020CC04 /* HYBSynthesizeController.swift */,
+			);
+			name = SynthesizeControllers;
+			sourceTree = "<group>";
+		};
+		696ED27C1AA54D970020CC04 /* AnswerControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2C81AA55F3B0020CC04 /* HYBAnswerController.swift */,
+			);
+			name = AnswerControllers;
+			sourceTree = "<group>";
+		};
+		696ED27D1AA54DA10020CC04 /* TweetControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2CA1AA55FC20020CC04 /* HYBTweetController.swift */,
+			);
+			name = TweetControllers;
+			sourceTree = "<group>";
+		};
+		696ED27E1AA54DA90020CC04 /* MineControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2CC1AA5600D0020CC04 /* HYBMineController.swift */,
+			);
+			name = MineControllers;
+			sourceTree = "<group>";
+		};
+		696ED27F1AA54DB70020CC04 /* MoreControllers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2E71AA58F620020CC04 /* LoginController */,
+				696ED2CE1AA560620020CC04 /* HYBMoreController.swift */,
+			);
+			name = MoreControllers;
+			sourceTree = "<group>";
+		};
+		696ED2801AA5511B0020CC04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2861AA551500020CC04 /* AnswerModels */,
+				696ED2851AA551470020CC04 /* SynthesizeModels */,
+				696ED2841AA551400020CC04 /* TweetModels */,
+				696ED2831AA551380020CC04 /* MineModels */,
+				696ED2821AA5512E0020CC04 /* MoreModels */,
+				696ED2811AA551230020CC04 /* BaseModels */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		696ED2811AA551230020CC04 /* BaseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseModels;
+			sourceTree = "<group>";
+		};
+		696ED2821AA5512E0020CC04 /* MoreModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MoreModels;
+			sourceTree = "<group>";
+		};
+		696ED2831AA551380020CC04 /* MineModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MineModels;
+			sourceTree = "<group>";
+		};
+		696ED2841AA551400020CC04 /* TweetModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TweetModels;
+			sourceTree = "<group>";
+		};
+		696ED2851AA551470020CC04 /* SynthesizeModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SynthesizeModels;
+			sourceTree = "<group>";
+		};
+		696ED2861AA551500020CC04 /* AnswerModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AnswerModels;
+			sourceTree = "<group>";
+		};
+		696ED2871AA551590020CC04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2891AA551620020CC04 /* Views */,
+				696ED2881AA5515D0020CC04 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		696ED2881AA5515D0020CC04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				696ED28F1AA551970020CC04 /* MoreCells */,
+				696ED28E1AA551900020CC04 /* BaseCells */,
+				696ED28D1AA551860020CC04 /* TweetCells */,
+				696ED28C1AA5517E0020CC04 /* SynthesizeCells */,
+				696ED28B1AA551770020CC04 /* MineCells */,
+				696ED28A1AA551700020CC04 /* AnswerCells */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		696ED2891AA551620020CC04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2901AA551A30020CC04 /* BaseViews */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		696ED28A1AA551700020CC04 /* AnswerCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AnswerCells;
+			sourceTree = "<group>";
+		};
+		696ED28B1AA551770020CC04 /* MineCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MineCells;
+			sourceTree = "<group>";
+		};
+		696ED28C1AA5517E0020CC04 /* SynthesizeCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SynthesizeCells;
+			sourceTree = "<group>";
+		};
+		696ED28D1AA551860020CC04 /* TweetCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TweetCells;
+			sourceTree = "<group>";
+		};
+		696ED28E1AA551900020CC04 /* BaseCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseCells;
+			sourceTree = "<group>";
+		};
+		696ED28F1AA551970020CC04 /* MoreCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MoreCells;
+			sourceTree = "<group>";
+		};
+		696ED2901AA551A30020CC04 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseViews;
+			sourceTree = "<group>";
+		};
+		696ED2931AA5526F0020CC04 /* OpenSourceLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				696ED29B1AA55A920020CC04 /* ZBarSDK */,
+				696ED2941AA5526F0020CC04 /* Alamofire */,
+			);
+			path = OpenSourceLibraries;
+			sourceTree = "<group>";
+		};
+		696ED2941AA5526F0020CC04 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2951AA5526F0020CC04 /* Alamofire.h */,
+				696ED2961AA5526F0020CC04 /* Alamofire.swift */,
+				696ED2971AA5526F0020CC04 /* Info.plist */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		696ED29B1AA55A920020CC04 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				696ED29C1AA55A920020CC04 /* Headers */,
+				696ED2B31AA55A930020CC04 /* libzbar.a */,
+				696ED2B41AA55A930020CC04 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		696ED29C1AA55A920020CC04 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				696ED29D1AA55A920020CC04 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		696ED29D1AA55A920020CC04 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				696ED29E1AA55A920020CC04 /* zbar */,
+				696ED2A81AA55A920020CC04 /* zbar.h */,
+				696ED2A91AA55A920020CC04 /* ZBarCameraSimulator.h */,
+				696ED2AA1AA55A920020CC04 /* ZBarCaptureReader.h */,
+				696ED2AB1AA55A920020CC04 /* ZBarHelpController.h */,
+				696ED2AC1AA55A930020CC04 /* ZBarImage.h */,
+				696ED2AD1AA55A930020CC04 /* ZBarImageScanner.h */,
+				696ED2AE1AA55A930020CC04 /* ZBarReaderController.h */,
+				696ED2AF1AA55A930020CC04 /* ZBarReaderView.h */,
+				696ED2B01AA55A930020CC04 /* ZBarReaderViewController.h */,
+				696ED2B11AA55A930020CC04 /* ZBarSDK.h */,
+				696ED2B21AA55A930020CC04 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		696ED29E1AA55A920020CC04 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				696ED29F1AA55A920020CC04 /* Decoder.h */,
+				696ED2A01AA55A920020CC04 /* Exception.h */,
+				696ED2A11AA55A920020CC04 /* Image.h */,
+				696ED2A21AA55A920020CC04 /* ImageScanner.h */,
+				696ED2A31AA55A920020CC04 /* Processor.h */,
+				696ED2A41AA55A920020CC04 /* Scanner.h */,
+				696ED2A51AA55A920020CC04 /* Symbol.h */,
+				696ED2A61AA55A920020CC04 /* Video.h */,
+				696ED2A71AA55A920020CC04 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		696ED2B41AA55A930020CC04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2B51AA55A930020CC04 /* zbar-back.png */,
+				696ED2B61AA55A930020CC04 /* zbar-help.html */,
+				696ED2B71AA55A930020CC04 /* zbar-helpicons.png */,
+				696ED2B81AA55A930020CC04 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		696ED2BE1AA55AE80020CC04 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				699627FD1AA5B3F100F779EE /* Network */,
+				696ED2E11AA57FC40020CC04 /* GUI */,
+				696ED2DA1AA57EC90020CC04 /* Extensions */,
+				696ED2D31AA57E4C0020CC04 /* CommonConstants */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		696ED2D31AA57E4C0020CC04 /* CommonConstants */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2D41AA57E4C0020CC04 /* GlobalDefine.swift */,
+				696ED2D51AA57E4C0020CC04 /* Server.swift */,
+				696ED2D61AA57E4C0020CC04 /* Shorthand.swift */,
+			);
+			name = CommonConstants;
+			path = Utilities/CommonConstants;
+			sourceTree = "<group>";
+		};
+		696ED2DA1AA57EC90020CC04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2DB1AA57EC90020CC04 /* NSStringExtensions */,
+				696ED2DD1AA57EC90020CC04 /* UIViewExtensions */,
+			);
+			name = Extensions;
+			path = Utilities/Extensions;
+			sourceTree = "<group>";
+		};
+		696ED2DB1AA57EC90020CC04 /* NSStringExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2DC1AA57EC90020CC04 /* NSStringCommonExtension.swift */,
+			);
+			path = NSStringExtensions;
+			sourceTree = "<group>";
+		};
+		696ED2DD1AA57EC90020CC04 /* UIViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2DE1AA57EC90020CC04 /* UIViewExtension.swift */,
+			);
+			path = UIViewExtensions;
+			sourceTree = "<group>";
+		};
+		696ED2E11AA57FC40020CC04 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2E21AA57FC40020CC04 /* ProgressHUD */,
+			);
+			name = GUI;
+			path = Utilities/GUI;
+			sourceTree = "<group>";
+		};
+		696ED2E21AA57FC40020CC04 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2E31AA57FC40020CC04 /* HYBProgressHUD.swift */,
+				696ED2E41AA57FC40020CC04 /* ProgressHUD.bundle */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		696ED2E71AA58F620020CC04 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				696ED2EB1AA593220020CC04 /* HYBLoginController.swift */,
+				696ED2EC1AA593220020CC04 /* HYBLoginController.xib */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		699627FD1AA5B3F100F779EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		696ED2551AA544550020CC04 /* OSChinaClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696ED2701AA544550020CC04 /* Build configuration list for PBXNativeTarget "OSChinaClient" */;
+			buildPhases = (
+				696ED2521AA544550020CC04 /* Sources */,
+				696ED2531AA544550020CC04 /* Frameworks */,
+				696ED2541AA544550020CC04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSChinaClient;
+			productName = OSChinaClient;
+			productReference = 696ED2561AA544550020CC04 /* OSChinaClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		696ED2651AA544550020CC04 /* OSChinaClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696ED2731AA544550020CC04 /* Build configuration list for PBXNativeTarget "OSChinaClientTests" */;
+			buildPhases = (
+				696ED2621AA544550020CC04 /* Sources */,
+				696ED2631AA544550020CC04 /* Frameworks */,
+				696ED2641AA544550020CC04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				696ED2681AA544550020CC04 /* PBXTargetDependency */,
+			);
+			name = OSChinaClientTests;
+			productName = OSChinaClientTests;
+			productReference = 696ED2661AA544550020CC04 /* OSChinaClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		696ED24E1AA544550020CC04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "huangyibiao free edu";
+				TargetAttributes = {
+					696ED2551AA544550020CC04 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					696ED2651AA544550020CC04 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 696ED2551AA544550020CC04;
+					};
+				};
+			};
+			buildConfigurationList = 696ED2511AA544550020CC04 /* Build configuration list for PBXProject "OSChinaClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 696ED24D1AA544550020CC04;
+			productRefGroup = 696ED2571AA544550020CC04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				696ED2551AA544550020CC04 /* OSChinaClient */,
+				696ED2651AA544550020CC04 /* OSChinaClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		696ED2541AA544550020CC04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696ED2BC1AA55A930020CC04 /* zbar-helpicons.png in Resources */,
+				696ED2991AA5526F0020CC04 /* Info.plist in Resources */,
+				696ED2E61AA57FC40020CC04 /* ProgressHUD.bundle in Resources */,
+				696ED2BD1AA55A930020CC04 /* zbar-samples.png in Resources */,
+				696ED2BA1AA55A930020CC04 /* zbar-back.png in Resources */,
+				696ED2BB1AA55A930020CC04 /* zbar-help.html in Resources */,
+				696ED2781AA549C20020CC04 /* Images.xcassets in Resources */,
+				696ED2EE1AA593220020CC04 /* HYBLoginController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696ED2641AA544550020CC04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		696ED2521AA544550020CC04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696ED2E51AA57FC40020CC04 /* HYBProgressHUD.swift in Sources */,
+				696ED2C31AA55BB10020CC04 /* HYBBaseController.swift in Sources */,
+				696ED2C91AA55F3B0020CC04 /* HYBAnswerController.swift in Sources */,
+				696ED2C51AA55CA60020CC04 /* HYBParentTableController.swift in Sources */,
+				696ED2CB1AA55FC20020CC04 /* HYBTweetController.swift in Sources */,
+				696ED2981AA5526F0020CC04 /* Alamofire.swift in Sources */,
+				696ED2D91AA57E4C0020CC04 /* Shorthand.swift in Sources */,
+				696ED2ED1AA593220020CC04 /* HYBLoginController.swift in Sources */,
+				699627FF1AA5B47000F779EE /* HYBBaseRequest.swift in Sources */,
+				696ED2E01AA57EC90020CC04 /* UIViewExtension.swift in Sources */,
+				696ED2C71AA55D0B0020CC04 /* HYBRefreshController.swift in Sources */,
+				696ED2CF1AA560620020CC04 /* HYBMoreController.swift in Sources */,
+				696ED2C11AA55B790020CC04 /* HYBSynthesizeController.swift in Sources */,
+				696ED25C1AA544550020CC04 /* AppDelegate.swift in Sources */,
+				696ED2D71AA57E4C0020CC04 /* GlobalDefine.swift in Sources */,
+				696ED2DF1AA57EC90020CC04 /* NSStringCommonExtension.swift in Sources */,
+				696ED2D11AA561250020CC04 /* HYBRootTabBarController.swift in Sources */,
+				696ED2D81AA57E4C0020CC04 /* Server.swift in Sources */,
+				696ED2CD1AA5600D0020CC04 /* HYBMineController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696ED2621AA544550020CC04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696ED26D1AA544550020CC04 /* OSChinaClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		696ED2681AA544550020CC04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 696ED2551AA544550020CC04 /* OSChinaClient */;
+			targetProxy = 696ED2671AA544550020CC04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		696ED26E1AA544550020CC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		696ED26F1AA544550020CC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		696ED2711AA544550020CC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = OSChinaClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OSChinaClient/OpenSourceLibraries/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSChinaClient/Objective-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		696ED2721AA544550020CC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = OSChinaClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OSChinaClient/OpenSourceLibraries/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSChinaClient/Objective-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		696ED2741AA544550020CC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OSChinaClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSChinaClient.app/OSChinaClient";
+			};
+			name = Debug;
+		};
+		696ED2751AA544550020CC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OSChinaClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSChinaClient.app/OSChinaClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		696ED2511AA544550020CC04 /* Build configuration list for PBXProject "OSChinaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696ED26E1AA544550020CC04 /* Debug */,
+				696ED26F1AA544550020CC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696ED2701AA544550020CC04 /* Build configuration list for PBXNativeTarget "OSChinaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696ED2711AA544550020CC04 /* Debug */,
+				696ED2721AA544550020CC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696ED2731AA544550020CC04 /* Build configuration list for PBXNativeTarget "OSChinaClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696ED2741AA544550020CC04 /* Debug */,
+				696ED2751AA544550020CC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 696ED24E1AA544550020CC04 /* Project object */;
+}
