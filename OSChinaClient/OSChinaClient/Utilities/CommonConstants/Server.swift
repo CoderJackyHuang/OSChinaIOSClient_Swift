@@ -21,10 +21,12 @@ let kApiLoginValidate = "/action/api/login_validate"
 ///
 let kApiBlogList = "/action/api/blog_list"
 let kApiBlogDetail = "/action/api/blog_detail"
-
 let kApiNewsList = "/action/api/news_list"
 let kApiNewsDetail =  "/action/api/news_detail"
 
+///
+/// 问答模块
+///
 let kApiPostList = "/action/api/post_list"
 let kApiPostDetail = "/action/api/post_detail"
 let kApiPostPub = "/action/api/post_pub"
