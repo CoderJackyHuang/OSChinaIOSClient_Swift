@@ -47,7 +47,7 @@ class HYBProgressHUD: UIView {
     
     dispatch_once(&Instance.onceToken, { () -> Void in
       Instance.instance = HYBProgressHUD(frame: UIScreen.mainScreen().bounds)
-      Instance.instance?.setStyle(HYBProgressHUDStyle.WhiteHUDStyle)
+      Instance.instance?.setStyle(HYBProgressHUDStyle.BlackHUDStyle)
     })
     
     return Instance.instance!

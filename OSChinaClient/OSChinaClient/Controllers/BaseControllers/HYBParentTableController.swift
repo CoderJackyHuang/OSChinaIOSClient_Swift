@@ -61,7 +61,6 @@ class HYBParentTableController : HYBBaseController, UITableViewDelegate, UITable
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    NSLog("子类需要重写此方法");
     var cell: AnyObject? = tableView.dequeueReusableCellWithIdentifier("UITableViewCellIdentifier");
     
     if cell == nil {
@@ -72,6 +71,10 @@ class HYBParentTableController : HYBBaseController, UITableViewDelegate, UITable
   }
   
   func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    if tableView.style == UITableViewStyle.Plain {
+      return 0;
+    }
+    
     if section != 0 {
       return 5;
     }

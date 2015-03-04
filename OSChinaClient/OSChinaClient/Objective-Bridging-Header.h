@@ -10,5 +10,6 @@
 #define OSChinaClient_Objective_Bridging_Header_h
 
 #import "ZBarSDK.h"
+#import "TBXML.h"
 
 #endif

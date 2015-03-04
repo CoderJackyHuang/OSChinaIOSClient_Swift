@@ -36,6 +36,24 @@
 		696ED2ED1AA593220020CC04 /* HYBLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED2EB1AA593220020CC04 /* HYBLoginController.swift */; };
 		696ED2EE1AA593220020CC04 /* HYBLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2EC1AA593220020CC04 /* HYBLoginController.xib */; };
 		699627FF1AA5B47000F779EE /* HYBBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */; };
+		69AFB71D1AA706550080BA80 /* HYBBlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFB71C1AA706550080BA80 /* HYBBlogModel.swift */; };
+		69D440EB1AA6A4A4007A7A18 /* HYBRequestExtensionMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D440EA1AA6A4A4007A7A18 /* HYBRequestExtensionMore.swift */; };
+		69D440F71AA6AC17007A7A18 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D440F41AA6AC17007A7A18 /* TBXML.m */; };
+		69D440FC1AA6AEAC007A7A18 /* HYBBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D440FB1AA6AEAC007A7A18 /* HYBBaseModel.swift */; };
+		69D440FE1AA6AEC4007A7A18 /* HYBLoginUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D440FD1AA6AEC4007A7A18 /* HYBLoginUserModel.swift */; };
+		69D441001AA6B6EB007A7A18 /* TBXMLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D440FF1AA6B6EB007A7A18 /* TBXMLExt.swift */; };
+		69D441091AA6D65E007A7A18 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69D441021AA6D65E007A7A18 /* arrow@2x.png */; };
+		69D4410A1AA6D65E007A7A18 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441031AA6D65E007A7A18 /* Refresh.swift */; };
+		69D4410B1AA6D65E007A7A18 /* RefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441041AA6D65E007A7A18 /* RefreshBaseView.swift */; };
+		69D4410C1AA6D65E007A7A18 /* RefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441051AA6D65E007A7A18 /* RefreshConst.swift */; };
+		69D4410D1AA6D65E007A7A18 /* RefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441061AA6D65E007A7A18 /* RefreshFooterView.swift */; };
+		69D4410E1AA6D65E007A7A18 /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441071AA6D65E007A7A18 /* RefreshHeaderView.swift */; };
+		69D4410F1AA6D65E007A7A18 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441081AA6D65E007A7A18 /* UIScrollView+Refresh.swift */; };
+		69D441111AA6E450007A7A18 /* HYBBaseRequestSynthesizeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441101AA6E450007A7A18 /* HYBBaseRequestSynthesizeExt.swift */; };
+		69D441131AA6EA75007A7A18 /* HYBNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441121AA6EA75007A7A18 /* HYBNewsModel.swift */; };
+		69D441171AA6F11B007A7A18 /* HYBNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441151AA6F11B007A7A18 /* HYBNewsCell.swift */; };
+		69D441181AA6F11B007A7A18 /* HYBNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D441161AA6F11B007A7A18 /* HYBNewsCell.xib */; };
+		69D4411A1AA6F3DC007A7A18 /* HYBBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D441191AA6F3DC007A7A18 /* HYBBaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +122,27 @@
 		696ED2EB1AA593220020CC04 /* HYBLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBLoginController.swift; path = Controllers/MoreControllers/LoginController/HYBLoginController.swift; sourceTree = "<group>"; };
 		696ED2EC1AA593220020CC04 /* HYBLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBLoginController.xib; path = Controllers/MoreControllers/LoginController/HYBLoginController.xib; sourceTree = "<group>"; };
 		699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseRequest.swift; path = Utilities/Network/HYBBaseRequest.swift; sourceTree = "<group>"; };
+		69AFB71C1AA706550080BA80 /* HYBBlogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBlogModel.swift; path = Models/SynthesizeModels/HYBBlogModel.swift; sourceTree = "<group>"; };
+		69D440EA1AA6A4A4007A7A18 /* HYBRequestExtensionMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBRequestExtensionMore.swift; path = Utilities/Network/HYBRequestExtensionMore.swift; sourceTree = "<group>"; };
+		69D440F11AA6AC17007A7A18 /* TBXML-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		69D440F21AA6AC17007A7A18 /* TBXML-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML-Prefix.pch"; sourceTree = "<group>"; };
+		69D440F31AA6AC17007A7A18 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		69D440F41AA6AC17007A7A18 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		69D440FB1AA6AEAC007A7A18 /* HYBBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseModel.swift; path = Models/BaseModels/HYBBaseModel.swift; sourceTree = "<group>"; };
+		69D440FD1AA6AEC4007A7A18 /* HYBLoginUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBLoginUserModel.swift; path = Models/MoreModels/HYBLoginUserModel.swift; sourceTree = "<group>"; };
+		69D440FF1AA6B6EB007A7A18 /* TBXMLExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBXMLExt.swift; sourceTree = "<group>"; };
+		69D441021AA6D65E007A7A18 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		69D441031AA6D65E007A7A18 /* Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		69D441041AA6D65E007A7A18 /* RefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshBaseView.swift; sourceTree = "<group>"; };
+		69D441051AA6D65E007A7A18 /* RefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConst.swift; sourceTree = "<group>"; };
+		69D441061AA6D65E007A7A18 /* RefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterView.swift; sourceTree = "<group>"; };
+		69D441071AA6D65E007A7A18 /* RefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
+		69D441081AA6D65E007A7A18 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
+		69D441101AA6E450007A7A18 /* HYBBaseRequestSynthesizeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseRequestSynthesizeExt.swift; path = Utilities/Network/HYBBaseRequestSynthesizeExt.swift; sourceTree = "<group>"; };
+		69D441121AA6EA75007A7A18 /* HYBNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBNewsModel.swift; path = Models/SynthesizeModels/HYBNewsModel.swift; sourceTree = "<group>"; };
+		69D441151AA6F11B007A7A18 /* HYBNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBNewsCell.swift; path = Views/Cells/SynthesizeCells/NewsCell/HYBNewsCell.swift; sourceTree = "<group>"; };
+		69D441161AA6F11B007A7A18 /* HYBNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBNewsCell.xib; path = Views/Cells/SynthesizeCells/NewsCell/HYBNewsCell.xib; sourceTree = "<group>"; };
+		69D441191AA6F3DC007A7A18 /* HYBBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseCell.swift; path = Views/Cells/BaseCells/HYBBaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +312,7 @@
 		696ED2811AA551230020CC04 /* BaseModels */ = {
 			isa = PBXGroup;
 			children = (
+				69D440FB1AA6AEAC007A7A18 /* HYBBaseModel.swift */,
 			);
 			name = BaseModels;
 			sourceTree = "<group>";
@@ -280,6 +320,7 @@
 		696ED2821AA5512E0020CC04 /* MoreModels */ = {
 			isa = PBXGroup;
 			children = (
+				69D440FD1AA6AEC4007A7A18 /* HYBLoginUserModel.swift */,
 			);
 			name = MoreModels;
 			sourceTree = "<group>";
@@ -301,6 +342,8 @@
 		696ED2851AA551470020CC04 /* SynthesizeModels */ = {
 			isa = PBXGroup;
 			children = (
+				69D441121AA6EA75007A7A18 /* HYBNewsModel.swift */,
+				69AFB71C1AA706550080BA80 /* HYBBlogModel.swift */,
 			);
 			name = SynthesizeModels;
 			sourceTree = "<group>";
@@ -359,6 +402,7 @@
 		696ED28C1AA5517E0020CC04 /* SynthesizeCells */ = {
 			isa = PBXGroup;
 			children = (
+				69D441141AA6F0C2007A7A18 /* NewsCell */,
 			);
 			name = SynthesizeCells;
 			sourceTree = "<group>";
@@ -373,6 +417,7 @@
 		696ED28E1AA551900020CC04 /* BaseCells */ = {
 			isa = PBXGroup;
 			children = (
+				69D441191AA6F3DC007A7A18 /* HYBBaseCell.swift */,
 			);
 			name = BaseCells;
 			sourceTree = "<group>";
@@ -394,6 +439,8 @@
 		696ED2931AA5526F0020CC04 /* OpenSourceLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				69D441011AA6D65E007A7A18 /* Refresh */,
+				69D440EC1AA6AC17007A7A18 /* TBXML */,
 				696ED29B1AA55A920020CC04 /* ZBarSDK */,
 				696ED2941AA5526F0020CC04 /* Alamofire */,
 			);
@@ -553,8 +600,45 @@
 			isa = PBXGroup;
 			children = (
 				699627FE1AA5B47000F779EE /* HYBBaseRequest.swift */,
+				69D440EA1AA6A4A4007A7A18 /* HYBRequestExtensionMore.swift */,
+				69D441101AA6E450007A7A18 /* HYBBaseRequestSynthesizeExt.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		69D440EC1AA6AC17007A7A18 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				69D440F11AA6AC17007A7A18 /* TBXML-iOS-Prefix.pch */,
+				69D440F21AA6AC17007A7A18 /* TBXML-Prefix.pch */,
+				69D440F31AA6AC17007A7A18 /* TBXML.h */,
+				69D440F41AA6AC17007A7A18 /* TBXML.m */,
+				69D440FF1AA6B6EB007A7A18 /* TBXMLExt.swift */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		69D441011AA6D65E007A7A18 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				69D441021AA6D65E007A7A18 /* arrow@2x.png */,
+				69D441031AA6D65E007A7A18 /* Refresh.swift */,
+				69D441041AA6D65E007A7A18 /* RefreshBaseView.swift */,
+				69D441051AA6D65E007A7A18 /* RefreshConst.swift */,
+				69D441061AA6D65E007A7A18 /* RefreshFooterView.swift */,
+				69D441071AA6D65E007A7A18 /* RefreshHeaderView.swift */,
+				69D441081AA6D65E007A7A18 /* UIScrollView+Refresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		69D441141AA6F0C2007A7A18 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				69D441151AA6F11B007A7A18 /* HYBNewsCell.swift */,
+				69D441161AA6F11B007A7A18 /* HYBNewsCell.xib */,
+			);
+			name = NewsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -645,6 +729,8 @@
 				696ED2BB1AA55A930020CC04 /* zbar-help.html in Resources */,
 				696ED2781AA549C20020CC04 /* Images.xcassets in Resources */,
 				696ED2EE1AA593220020CC04 /* HYBLoginController.xib in Resources */,
+				69D441181AA6F11B007A7A18 /* HYBNewsCell.xib in Resources */,
+				69D441091AA6D65E007A7A18 /* arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,18 +748,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D440FC1AA6AEAC007A7A18 /* HYBBaseModel.swift in Sources */,
+				69D4410F1AA6D65E007A7A18 /* UIScrollView+Refresh.swift in Sources */,
 				696ED2E51AA57FC40020CC04 /* HYBProgressHUD.swift in Sources */,
 				696ED2C31AA55BB10020CC04 /* HYBBaseController.swift in Sources */,
 				696ED2C91AA55F3B0020CC04 /* HYBAnswerController.swift in Sources */,
+				69D441171AA6F11B007A7A18 /* HYBNewsCell.swift in Sources */,
 				696ED2C51AA55CA60020CC04 /* HYBParentTableController.swift in Sources */,
 				696ED2CB1AA55FC20020CC04 /* HYBTweetController.swift in Sources */,
 				696ED2981AA5526F0020CC04 /* Alamofire.swift in Sources */,
+				69D4410C1AA6D65E007A7A18 /* RefreshConst.swift in Sources */,
+				69D4410A1AA6D65E007A7A18 /* Refresh.swift in Sources */,
 				696ED2D91AA57E4C0020CC04 /* Shorthand.swift in Sources */,
 				696ED2ED1AA593220020CC04 /* HYBLoginController.swift in Sources */,
+				69D441111AA6E450007A7A18 /* HYBBaseRequestSynthesizeExt.swift in Sources */,
+				69D441001AA6B6EB007A7A18 /* TBXMLExt.swift in Sources */,
+				69D440EB1AA6A4A4007A7A18 /* HYBRequestExtensionMore.swift in Sources */,
 				699627FF1AA5B47000F779EE /* HYBBaseRequest.swift in Sources */,
+				69D4410B1AA6D65E007A7A18 /* RefreshBaseView.swift in Sources */,
 				696ED2E01AA57EC90020CC04 /* UIViewExtension.swift in Sources */,
 				696ED2C71AA55D0B0020CC04 /* HYBRefreshController.swift in Sources */,
 				696ED2CF1AA560620020CC04 /* HYBMoreController.swift in Sources */,
+				69D440FE1AA6AEC4007A7A18 /* HYBLoginUserModel.swift in Sources */,
+				69D4411A1AA6F3DC007A7A18 /* HYBBaseCell.swift in Sources */,
+				69AFB71D1AA706550080BA80 /* HYBBlogModel.swift in Sources */,
+				69D4410E1AA6D65E007A7A18 /* RefreshHeaderView.swift in Sources */,
+				69D4410D1AA6D65E007A7A18 /* RefreshFooterView.swift in Sources */,
 				696ED2C11AA55B790020CC04 /* HYBSynthesizeController.swift in Sources */,
 				696ED25C1AA544550020CC04 /* AppDelegate.swift in Sources */,
 				696ED2D71AA57E4C0020CC04 /* GlobalDefine.swift in Sources */,
@@ -681,6 +781,8 @@
 				696ED2D11AA561250020CC04 /* HYBRootTabBarController.swift in Sources */,
 				696ED2D81AA57E4C0020CC04 /* Server.swift in Sources */,
 				696ED2CD1AA5600D0020CC04 /* HYBMineController.swift in Sources */,
+				69D441131AA6EA75007A7A18 /* HYBNewsModel.swift in Sources */,
+				69D440F71AA6AC17007A7A18 /* TBXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +887,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = OSChinaClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -802,6 +905,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = OSChinaClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -26,8 +26,16 @@ let kNavBarHeight:CGFloat = 44.0
 // 中间可以显示的区域的高度
 let kMiddleScreenHeight = kScreenHeight - kStatusBarHeight - kNavBarHeight - 49
 
-/// 导航颜色
-let kNavColor = UIColor(red: 192.0 / 255.0, green: 37.0 / 255.0, blue: 62.0 / 255.0, alpha: 1.0)
+///
+/// 获取主线程
+///
+let kMainThread = dispatch_get_main_queue()
+
+///
+/// 获取全局线程
+///
+let kGlobalThread = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
 
 ///
 /// 与请求数据相关的定义

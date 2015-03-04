@@ -8,20 +8,55 @@
 
 import Foundation
 
-typealias SuccessBlock = (responseObject: AnyObject?) -> Void;
+typealias SuccessBlock = (responseObject: String?) -> Void;
 typealias FailBlock = (error: NSError?) -> Void;
 
 ///
 /// 网络请求API封装
 ///
 class HYBBaseRequest {
+  class func Get(url: String, success: SuccessBlock, fail: FailBlock) -> Request {
+    return self.Get(url, params: nil, success: success, fail: fail);
+  }
+  
   class func Get(url: String, params:[String: AnyObject]?, success: SuccessBlock, fail: FailBlock) -> Request {
     let op = Manager.sharedInstance.request(Method.GET,
-      url,
+      self.baseUrl(url),
       parameters: params,
-      encoding: ParameterEncoding.JSON).responseJSON { (request, responseObject, object, error) -> Void in
-        
+      encoding: ParameterEncoding.URL).responseString { (request, response, responseObject, error) -> Void in
+        if error == nil {
+          println("success：" + url);
+          
+          success(responseObject: responseObject);
+        } else {
+          println("error：" + url);
+          fail(error: error);
+        }
     };
     return op;
+  }
+  
+  class func Post(url: String, params:[String: AnyObject]?, success: SuccessBlock, fail: FailBlock) -> Request {
+    let op = Manager.sharedInstance.request(Method.POST,
+      self.baseUrl(url),
+      parameters: params,
+      encoding: ParameterEncoding.JSON).responseString { (request, response, responseObject, error) -> Void in
+        if error == nil {
+          println("success：" + url);
+          success(responseObject: responseObject);
+        } else {
+          println("error：" + url)
+          fail(error: error);
+        }
+    };
+    return op;
+  }
+  
+  private class func baseUrl(url: String) -> String {
+    if url.hasPrefix("http://") || url.hasPrefix("https://") {
+      return url;
+    }
+    
+    return String(format: "%@%@", kServerBase, url);
   }
 }

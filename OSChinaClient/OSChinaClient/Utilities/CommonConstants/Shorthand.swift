@@ -9,13 +9,4 @@
 import Foundation
 import UIKit
 
-///
-/// 获取主线程
-///
-let kMainThread = dispatch_get_main_queue()
-
-///
-/// 获取全局线程
-///
-let kGlobalThread = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-
+let kNewsCellIdentier = "HYBNewsCellIdentifier"
