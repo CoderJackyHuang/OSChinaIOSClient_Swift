@@ -27,19 +27,40 @@ class HYBTweetCell: HYBBaseCell {
         self.bodyLabel.text = model!.body;
         self.commentCountLabel.text = String(format: "%d", model!.commentCount);
         self.pubDateLabel.text = model!.pubDate;
+        self.bodyLabel.sizeToFit();
+        
         if model!.imgSmall.isEmpty {
           self.imgSmall.hidden = true;
+          self.pubDateLabel.originY(self.bodyLabel.bottomY() + 15);
         } else {
+          self.imgSmall.hidden = false;
+          self.imgSmall.originY(self.bodyLabel.bottomY() + 15);
+          self.pubDateLabel.originY(self.imgSmall.bottomY() + 15);
           self.imgSmall.loadImage(model!.imgSmall, holder: "tweetloading");
         }
       }
     }
   }
   
-  class func height(model: HYBTweetModel) -> CGFloat {
-    var h = 26;
+  ///
+  /// 获取cell的高度
+  ///
+  class func cellHeight(model: HYBTweetModel) -> CGFloat {
+    var h: CGFloat = 26.0;
     
-    //h += model.body.size(UIFont(fontWithSize: 13), )
-    return 0;
+    // content的高度
+    h += model.body.size(13, maxWidth: kScreenWidth - 49 - 38).height;
+    
+    if !model.imgSmall.isEmpty {
+      h += 15 + 68;
+    }
+    
+    // pub date height
+    h += 15 + 17;
+    
+    // bottom height
+    h += 10;
+    
+    return h;
   }
 }

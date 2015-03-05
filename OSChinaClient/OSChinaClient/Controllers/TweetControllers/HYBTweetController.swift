@@ -38,10 +38,10 @@ class HYBTweetController: HYBRefreshController {
       uid = HYBUserTool.uid();
     }
     
-    return String(format: "%@?uid=%d&pageIndex=%d&pageSize=10",
+    return String(format: "%@?uid=%d&pageIndex=%d&pageSize=20",
       kApiTweetList,
       uid,
-      self.currentPage);
+      self.currentPage-1);
   }
   
   override func onSelectedTitleControl(sender: UISegmentedControl) {
@@ -100,7 +100,11 @@ class HYBTweetController: HYBRefreshController {
   }
   
   func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return 165;
+    if indexPath.row >= self.datasource.count {
+      return 0;
+    }
+    
+    let model = self.datasource.objectAtIndex(indexPath.row) as HYBTweetModel;
+    return HYBTweetCell.cellHeight(model);
   }
-
 }

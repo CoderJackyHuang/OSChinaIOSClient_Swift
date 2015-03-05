@@ -62,8 +62,8 @@ class HYBMoreController: HYBParentTableController {
       let array = self.datasource.objectAtIndex(indexPath.section) as NSArray;
       if indexPath.row < array.count {
         let dict = array.objectAtIndex(indexPath.row) as NSDictionary;
-        cell?.imageView.image = UIImage(named: dict["imgName"] as String);
-        cell?.textLabel.text = dict["name"] as? String;
+        cell?.imageView?.image = UIImage(named: dict["imgName"] as String);
+        cell?.textLabel?.text = dict["name"] as? String;
       }
     }
     

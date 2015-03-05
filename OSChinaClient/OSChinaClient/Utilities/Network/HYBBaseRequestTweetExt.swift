@@ -31,6 +31,7 @@ extension HYBBaseRequest {
         
         while tweet != nil {
           let model = HYBTweetModel();
+          
           model.id = TBXML.intValue("id", parent: tweet);
           model.imgBig = TBXML.text("imgBig", parent: tweet);
           model.commentCount = TBXML.intValue("commentCount", parent: tweet);

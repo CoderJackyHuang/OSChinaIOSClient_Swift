@@ -23,16 +23,18 @@ class HYBBaseRequest {
     let op = Manager.sharedInstance.request(Method.GET,
       self.baseUrl(url),
       parameters: params,
-      encoding: ParameterEncoding.URL).responseString { (request, response, responseObject, error) -> Void in
+      encoding: ParameterEncoding.URL)
+      .responseString(encoding: NSUTF8StringEncoding) { (request, response, str, error) -> Void in
         if error == nil {
-          println("success：" + url);
-          
-          success(responseObject: responseObject);
+          println("success：" + request.URLString);
+        
+          success(responseObject: str);
         } else {
           println("error：" + url);
           fail(error: error);
         }
-    };
+    }
+
     return op;
   }
   
@@ -42,7 +44,7 @@ class HYBBaseRequest {
       parameters: params,
       encoding: ParameterEncoding.JSON).responseString { (request, response, responseObject, error) -> Void in
         if error == nil {
-          println("success：" + url);
+          println("success：" + request.URLString);
           success(responseObject: responseObject);
         } else {
           println("error：" + url)

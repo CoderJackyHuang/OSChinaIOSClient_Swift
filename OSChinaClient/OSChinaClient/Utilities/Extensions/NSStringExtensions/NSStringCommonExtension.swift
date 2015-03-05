@@ -51,7 +51,7 @@ extension String {
     return rect.size;
   }
   
-  //  func size(fontSize: CGFloat, maxWidth: CGFloat) -> CGSize {
-  //    self.size(UIFont(fontSize), maxWidth);
-  //  }
+  func size(fontSize: CGFloat, maxWidth: CGFloat) -> CGSize {
+    return self.size(UIFont.systemFontOfSize(fontSize), maxWidth: maxWidth);
+  }
 }
