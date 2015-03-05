@@ -30,12 +30,15 @@ let kApiNewsDetail =  "/action/api/news_detail"
 let kApiPostList = "/action/api/post_list"
 let kApiPostDetail = "/action/api/post_detail"
 let kApiPostPub = "/action/api/post_pub"
-//#define api_tweet_list @"http://www.oschina.net/action/api/tweet_list"
-//#define api_tweet_detail @"http://www.oschina.net/action/api/tweet_detail"
-//#define api_tweet_delete @"http://www.oschina.net/action/api/tweet_delete"
-//
-//#define api_tweet_pub @"http://www.oschina.net/action/api/tweet_pub"
-//#define api_software_tweet_pub @"http://www.oschina.net/action/api/software_tweet_pub"
+
+///
+/// 动弹模块
+///
+let kApiTweetList = "/action/api/tweet_list"
+let kApiTweetDefailt = "/action/api/tweet_detail"
+let kApiTweetDelete = "/action/api/tweet_delete"
+let kApiTweetPub = "/action/api/tweet_pub"
+let kApiSoftwareTweetPub = "/action/api/software_tweet_pub"
 //
 //#define api_active_list @"http://www.oschina.net/action/api/active_list"
 //#define api_message_list @"http://www.oschina.net/action/api/message_list"

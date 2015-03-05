@@ -92,7 +92,7 @@ class HYBSynthesizeController : HYBRefreshController {
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    var cell: HYBNewsCell? = tableView.dequeueReusableCellWithIdentifier(kNewsCellIdentier) as? HYBNewsCell;
+    var cell: HYBNewsCell? = tableView.dequeueReusableCellWithIdentifier(kNewsCellIdentifier) as? HYBNewsCell;
     
     if cell == nil {
       cell = NSBundle.mainBundle().loadNibNamed("HYBNewsCell", owner: self, options: nil).last as? HYBNewsCell;

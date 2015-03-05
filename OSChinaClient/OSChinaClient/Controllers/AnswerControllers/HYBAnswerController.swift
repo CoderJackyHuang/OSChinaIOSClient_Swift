@@ -21,7 +21,7 @@ class HYBAnswerController: HYBRefreshController {
     super.viewDidLoad();
     
     self.titleView(["问答", "分享", "综合", "职业", "站务"], selectedIndex: 0);
-    self.addItem(imageName: "tweetBlue", isLeft: false);
+    self.addItem(imageName: "questionBlue", isLeft: false);
     self.tableView.frame = CGRectMake(0, 0, kScreenWidth, kMiddleScreenHeight);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None;
     self.addHeaderRefresh(support: true);
@@ -31,24 +31,10 @@ class HYBAnswerController: HYBRefreshController {
   }
   
   func url() -> String {
-    var url = "";
-    
-    switch (self.titleControl!.selectedSegmentIndex) {
-    case 1:
-      url = String(format: "%@?type=latest&pageIndex=%d&pageSize=%d",
-        kApiBlogList, self.currentPage, 20);
-      break;
-    case 2:
-      
-      url = String(format: "%@?type=recommend&pageIndex=%d&pageSize=%d",
-        kApiNewsList, self.currentPage, 20);
-      break;
-    default:
-      url = String(format: "%@?catalog=%d&pageIndex=%d&pageSize=%d",
-        kApiNewsList, 1, self.currentPage, 20);
-      break;
-    }
-    return url;
+    return String(format: "%@?catalog=%d&pageIndex=%d&pageSize=20",
+      kApiPostList,
+      self.titleControl!.selectedSegmentIndex + 1,
+      self.currentPage);
   }
   
   override func onSelectedTitleControl(sender: UISegmentedControl) {
@@ -58,7 +44,7 @@ class HYBAnswerController: HYBRefreshController {
   override func headerRefresh() {
     super.headerRefresh();
     
-    self.currentRequest = HYBBaseRequest.newsList(self.titleControl!.selectedSegmentIndex, url: self.url(), success: { (models) -> () in
+    self.currentRequest = HYBBaseRequest.postList(self.url(), success: { (models) -> () in
       if models == nil {
         HYBProgressHUD.showError("加载失败");
       } else {
@@ -76,7 +62,7 @@ class HYBAnswerController: HYBRefreshController {
   override func footerLoadMore() {
     super.footerLoadMore();
     
-    self.currentRequest = HYBBaseRequest.newsList(self.titleControl!.selectedSegmentIndex, url: self.url(), success: { (models) -> () in
+    self.currentRequest = HYBBaseRequest.postList(self.url(), success: { (models) -> () in
       if models == nil {
         self.endFooterLoadMore(success: false);
         HYBProgressHUD.showError("加载失败");
@@ -92,14 +78,14 @@ class HYBAnswerController: HYBRefreshController {
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    var cell: HYBNewsCell? = tableView.dequeueReusableCellWithIdentifier(kNewsCellIdentier) as? HYBNewsCell;
+    var cell: HYBPostCell? = tableView.dequeueReusableCellWithIdentifier(kPostCellIdentifier) as? HYBPostCell;
     
     if cell == nil {
-      cell = NSBundle.mainBundle().loadNibNamed("HYBNewsCell", owner: self, options: nil).last as? HYBNewsCell;
+      cell = NSBundle.mainBundle().loadNibNamed("HYBPostCell", owner: self, options: nil).last as? HYBPostCell;
     }
     
     if indexPath.row < self.datasource.count {
-      let model = self.datasource.objectAtIndex(indexPath.row) as? HYBBaseModel;
+      let model = self.datasource.objectAtIndex(indexPath.row) as? HYBPostModel;
       cell?.model = model;
     }
     
@@ -107,7 +93,7 @@ class HYBAnswerController: HYBRefreshController {
   }
   
   func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return 50;
+    return 65;
   }
 
 }

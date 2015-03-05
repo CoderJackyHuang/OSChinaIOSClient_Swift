@@ -9,4 +9,6 @@
 import Foundation
 import UIKit
 
-let kNewsCellIdentier = "HYBNewsCellIdentifier"
+let kNewsCellIdentifier = "HYBNewsCellIdentifier"
+let kPostCellIdentifier = "HYBPostCellIdentifier"
+let kTweetCellIdentifier = "HYBTweetCellIdentifier"

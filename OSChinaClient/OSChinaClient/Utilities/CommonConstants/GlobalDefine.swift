@@ -36,6 +36,7 @@ let kMainThread = dispatch_get_main_queue()
 ///
 let kGlobalThread = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
+let kUserDefaults = NSUserDefaults.standardUserDefaults();
 
 ///
 /// 与请求数据相关的定义

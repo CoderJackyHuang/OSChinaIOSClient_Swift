@@ -11,5 +11,6 @@
 
 #import "ZBarSDK.h"
 #import "TBXML.h"
+#import <CommonCrypto/CommonDigest.h>
 
 #endif
