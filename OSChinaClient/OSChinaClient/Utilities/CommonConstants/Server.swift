@@ -15,6 +15,7 @@ let kServerBase = "http://www.oschina.net"
 /// 更多模块
 ///
 let kApiLoginValidate = "/action/api/login_validate"
+let kApiVersionCheck = "/MobileAppVersion.xml"
 
 ///
 /// 综合模块

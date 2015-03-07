@@ -52,4 +52,36 @@ extension HYBBaseRequest {
     
     return req;
   }
+  
+  ///
+  /// 从服务器中检查IOS版本
+  ///
+  class func checkVersion(url: String, success: SuccessBoolBlock, fail: FailBlock) -> Request {
+    let req = self.Get(url, success: { (responseObject) -> Void in
+      let xml = TBXML(XMLString: responseObject, error: nil);
+      let root = xml.rootXMLElement;
+      
+      if root == nil {
+        success(responseObject: false);
+        return;
+      }
+      
+      let update = TBXML.childElementNamed("update", parentElement: root);
+      if update == nil {
+        success(responseObject: false);
+        return;
+      }
+      
+      let version = TBXML.text("ios", parent: update);
+      if version > HYBCommonTool.appVersion() {
+        success(responseObject: true);
+      } else {
+        success(responseObject: false);
+      }
+    }) { (error) -> Void in
+      fail(error: error);
+    };
+    
+    return req;
+  }
 }

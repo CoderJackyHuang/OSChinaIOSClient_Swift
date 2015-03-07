@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+typealias SuccessBoolBlock = (responseObject: Bool) -> Void
 typealias SuccessBlock = (responseObject: String?) -> Void;
 typealias FailBlock = (error: NSError?) -> Void;
 
