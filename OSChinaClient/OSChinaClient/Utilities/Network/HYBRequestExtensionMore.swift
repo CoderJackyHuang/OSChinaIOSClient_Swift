@@ -84,4 +84,43 @@ extension HYBBaseRequest {
     
     return req;
   }
+  
+  ///
+  /// 软件列表接口
+  ///
+  class func softwareList(url: String, params:[String : AnyObject]?, success: SuccessListBlock, fail: FailBlock) -> Request {
+    let req = self.Post(url, params: params, success: { (responseObject) -> Void in
+      let xml = TBXML(XMLString: responseObject, error: nil);
+      let root = xml.rootXMLElement;
+
+      if root == nil {
+        success(nil);
+        return;
+      }
+      
+      let softwares = TBXML.childElementNamed("softwares", parentElement: root);
+      if softwares == nil {
+        success(nil);
+        return;
+      }
+      
+      var software = TBXML.childElementNamed("software", parentElement: softwares);
+      var modelList = Array<AnyObject>();
+      while software != nil {
+        let model = HYBSoftwareModel();
+        model.name = TBXML.text("name", parent: software);
+        model.desc = TBXML.text("description", parent: software);
+        model.url = TBXML.text("url", parent: software);
+        
+        modelList.append(model);
+        software = TBXML.nextSiblingNamed("software", searchFromElement: software);
+      }
+      
+      success(modelList);
+      }) { (error) -> Void in
+        fail(error: error);
+    };
+    
+    return req;
+  }
 }

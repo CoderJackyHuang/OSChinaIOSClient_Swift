@@ -94,7 +94,13 @@ class HYBMoreController: HYBParentTableController, UIAlertViewDelegate {
       }
       break;
     case 1: // section 1
-      
+      if indexPath.row == 0 { // 软件
+        let controller = HYBSoftwareController();
+        controller.hidesBottomBarWhenPushed = true;
+        self.navigationController?.pushViewController(controller, animated: true);
+      } else { // 搜索
+        
+      }
       break;
     case 2: // section 2
       switch (indexPath.row) {
