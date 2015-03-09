@@ -658,11 +658,9 @@ public class Request {
     public func response(queue: dispatch_queue_t? = nil, serializer: Serializer, completionHandler: (NSURLRequest, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) -> Self {
         dispatch_async(delegate.queue) {
             let (responseObject: AnyObject?, serializationError: NSError?) = serializer(self.request, self.response, self.delegate.data)
-          
-          let resultString = NSString(data: self.delegate.data!, encoding: NSUTF8StringEncoding);
-          
-            dispatch_async(queue ?? dispatch_get_main_queue()) {
-                completionHandler(self.request, self.response, resultString, self.delegate.error ?? serializationError)
+   
+          dispatch_async(queue ?? dispatch_get_main_queue()) {
+              completionHandler(self.request, self.response, responseObject, self.delegate.error ?? serializationError)
             }
         }
 

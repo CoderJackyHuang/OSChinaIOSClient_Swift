@@ -19,6 +19,10 @@ extension HYBBaseRequest {
   typealias SuccessListBlock = ([AnyObject]?) -> ();
   class func tweetList(url: String, success: SuccessListBlock, fail: FailBlock) -> Request {
     let req = self.Get(url, success: { (responseObject) -> Void in
+      ///
+      /// Alamofire网络请求库，在请求这个接口的XML数据时，在将data转换成String时，数据是完整的，
+      /// 但当serializer成AnyObject?类型后，只有一条半的数据了，具体原因不明，当前未找到好的解决方案
+      /// 这里就留给喜欢研究的朋友
       let xml = TBXML(XMLString: responseObject, error: nil);
       let root = xml.rootXMLElement;
       let tweets = TBXML.childElementNamed("tweets", parentElement: root);

@@ -20,6 +20,15 @@ extension HYBBaseRequest {
   /// 登录接口
   ///
   class func login(url: String, params:[String : AnyObject]?, success: SuccessLoginBlock, fail: FailBlock) -> Request {
+    let manager = AFHTTPRequestOperationManager(baseURL: NSURL(string: kServerBase));
+   // manager.requestSerializer.setValue("text/xml", forHttpHeaderField: "Content-Type");
+  
+    manager.POST(url, parameters: params, success: { (op, obj) -> Void in
+          println(obj);
+    }, failure: { (op, er) -> Void in
+    
+    });
+    
     let req = self.Post(url, params: params, success: { (responseObject) -> Void in
       let xml = TBXML(XMLString: responseObject, error: nil);
       let root = xml.rootXMLElement;
@@ -45,7 +54,7 @@ extension HYBBaseRequest {
         model.newFansCount = TBXML.intValue("newFansCount", parent: notice);
       }
       
-      success(model: model);
+     // success(model: model);
     }) { (error) -> Void in
       fail(error: error);
     };

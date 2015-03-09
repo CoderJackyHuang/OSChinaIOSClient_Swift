@@ -27,6 +27,7 @@ class HYBUserTool {
   ///
   class func uid() -> Int {
     var uid = kUserDefaults.integerForKey("kUidKey");
+    
     return uid;
   }
 }

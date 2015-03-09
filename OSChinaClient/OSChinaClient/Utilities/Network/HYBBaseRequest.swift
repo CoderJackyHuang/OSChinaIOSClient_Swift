@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias SuccessBlock = (responseObject: String?) -> Void;
+typealias SuccessBlock = (responseObject: NSString?) -> Void;
 typealias FailBlock = (error: NSError?) -> Void;
 
 ///
@@ -25,16 +25,17 @@ class HYBBaseRequest {
       parameters: params,
       encoding: ParameterEncoding.URL)
       .responseString(encoding: NSUTF8StringEncoding) { (request, response, str, error) -> Void in
+        
         if error == nil {
           println("success：" + request.URLString);
-        
+          
           success(responseObject: str);
         } else {
           println("error：" + url);
           fail(error: error);
         }
     }
-
+    
     return op;
   }
   
@@ -42,7 +43,7 @@ class HYBBaseRequest {
     let op = Manager.sharedInstance.request(Method.POST,
       self.baseUrl(url),
       parameters: params,
-      encoding: ParameterEncoding.JSON).responseString { (request, response, responseObject, error) -> Void in
+      encoding: ParameterEncoding.URL).responseString { (request, response, responseObject, error) -> Void in
         if error == nil {
           println("success：" + request.URLString);
           success(responseObject: responseObject);
@@ -50,7 +51,8 @@ class HYBBaseRequest {
           println("error：" + url)
           fail(error: error);
         }
-    };
+    }
+    
     return op;
   }
   

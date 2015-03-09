@@ -109,4 +109,6 @@ class HYBSynthesizeController : HYBRefreshController {
   func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
     return 50;
   }
+  
+  
 }
