@@ -21,8 +21,6 @@
 // THE SOFTWARE.
 
 import Foundation
-import Dispatch
-
 
 /// Alamofire errors
 public let AlamofireErrorDomain = "com.alamofire.error"
@@ -721,25 +719,6 @@ public class Request {
         return queue
         }()
     }
-<<<<<<< HEAD
-
-    /**
-        Adds a handler to be called once the request has finished.
-
-        :param: queue The queue on which the completion handler is dispatched.
-        :param: serializer The closure responsible for serializing the request, response, and data.
-        :param: completionHandler The code to be executed once the request has finished.
-
-        :returns: The request.
-    */
-    public func response(queue: dispatch_queue_t? = nil, serializer: Serializer, completionHandler: (NSURLRequest, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) -> Self {
-        dispatch_async(delegate.queue) {
-            let (responseObject: AnyObject?, serializationError: NSError?) = serializer(self.request, self.response, self.delegate.data)
-   
-          dispatch_async(queue ?? dispatch_get_main_queue()) {
-              completionHandler(self.request, self.response, responseObject, self.delegate.error ?? serializationError)
-            }
-=======
     
     // MARK: NSURLSessionTaskDelegate
     
@@ -774,7 +753,6 @@ public class Request {
           if credential != nil {
             disposition = .UseCredential
           }
->>>>>>> origin/master
         }
       }
       
@@ -1342,12 +1320,12 @@ extension Request: DebugPrintable {
     // See https://github.com/CocoaPods/swift/issues/24
     #if !os(OSX)
       if let cookieStorage = session.configuration.HTTPCookieStorage {
-        if let cookies = cookieStorage.cookiesForURL(URL) as? [NSHTTPCookie] {
-          if !cookies.isEmpty {
-            let string = cookies.reduce(""){ $0 + "\($1.name)=\($1.value ?? String());" }
-            components.append("-b \"\(string.substringToIndex(string.endIndex.predecessor()))\"")
-          }
-        }
+      if let cookies = cookieStorage.cookiesForURL(URL) as? [NSHTTPCookie] {
+      if !cookies.isEmpty {
+      let string = cookies.reduce(""){ $0 + "\($1.name)=\($1.value ?? String());" }
+      components.append("-b \"\(string.substringToIndex(string.endIndex.predecessor()))\"")
+      }
+      }
       }
     #endif
     
