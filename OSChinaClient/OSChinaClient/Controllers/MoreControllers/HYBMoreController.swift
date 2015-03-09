@@ -13,7 +13,7 @@ import UIKit
 /// 更多模块
 /// 包含扫一扫、登录、注销、查看软件、搜索、意见反馈、官方微博、关于我们、检查更新、给我评分子功能
 ///
-class HYBMoreController: HYBParentTableController {
+class HYBMoreController: HYBParentTableController, UIAlertViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad();
     
@@ -75,7 +75,7 @@ class HYBMoreController: HYBParentTableController {
   ///
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     switch (indexPath.section) {
-    case 0:
+    case 0: // section 0
       switch (indexPath.row) {
       case 0:// 登录
         let loginController = HYBLoginController(nibName: "HYBLoginController", bundle: nil);
@@ -93,12 +93,58 @@ class HYBMoreController: HYBParentTableController {
         break;
       }
       break;
-    case 1:
+    case 1: // section 1
+      if indexPath.row == 0 { // 软件
+        let controller = HYBSoftwareController();
+        controller.hidesBottomBarWhenPushed = true;
+        self.navigationController?.pushViewController(controller, animated: true);
+      } else { // 搜索
+        
+      }
       break;
-    case 2:
+    case 2: // section 2
+      switch (indexPath.row) {
+      case 0:// 意见反馈
+        HYBCommonTool.openURL("mailto:oschina.net@gmail.com");
+      break;
+      case 1: // 官方微博
+        HYBCommonTool.openURL("http://www.weibo.com/oschina2010");
+        break;
+      case 2: // 关于我们
+        let us = HYBAboutUsController(nibName: "HYBAboutUsController", bundle: nil);
+        us.hidesBottomBarWhenPushed = true;
+        self.navigationController?.pushViewController(us, animated: true);
+        break;
+      case 3: // 检查更新
+        self.currentRequest = HYBBaseRequest.checkVersion(kApiVersionCheck, success: { (responseObject) -> Void in
+          if responseObject == true {
+            let alert = UIAlertView(title: "温馨提示", message: "开源中国iPhone客户端有新版了\n您需要下载吗?", delegate: self, cancelButtonTitle: "取消", otherButtonTitles: "确定");
+            alert.show();
+          } else {
+            let alert = UIAlertView(title: "", message: "当前已经是最新版本", delegate: nil, cancelButtonTitle: "确定");
+            alert.show();
+          }
+          }, fail: { (error) -> Void in
+            self.showNetError(error);
+        });
+        break;
+      default: // 给我们评分
+        HYBCommonTool.openURL("itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=524298520");
+        break;
+      }
+
       break;
     default:
       break;
+    }
+  }
+  
+  ///
+  /// UIAlertViewDelegate
+  ///
+  func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+    if buttonIndex == 1 {
+      HYBCommonTool.openURL("itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=524298520");
     }
   }
 }

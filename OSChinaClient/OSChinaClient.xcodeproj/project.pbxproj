@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690549AA1AAC6CCF005130CB /* HYBSoftwareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690549A91AAC6CCF005130CB /* HYBSoftwareController.swift */; };
+		690549AC1AAC78D5005130CB /* HYBSoftwareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690549AB1AAC78D5005130CB /* HYBSoftwareModel.swift */; };
 		696ED25C1AA544550020CC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED25B1AA544550020CC04 /* AppDelegate.swift */; };
 		696ED26D1AA544550020CC04 /* OSChinaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED26C1AA544550020CC04 /* OSChinaClientTests.swift */; };
 		696ED2781AA549C20020CC04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696ED2771AA549C20020CC04 /* Images.xcassets */; };
@@ -74,6 +76,9 @@
 		699E86EF1AA97A1200F57690 /* HYBShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E86ED1AA97A1200F57690 /* HYBShareController.swift */; };
 		699E86F01AA97A1200F57690 /* HYBShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699E86EE1AA97A1200F57690 /* HYBShareController.xib */; };
 		69AFB71D1AA706550080BA80 /* HYBBlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFB71C1AA706550080BA80 /* HYBBlogModel.swift */; };
+		69B381581AAA93BE00F0BBCC /* HYBAboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B381561AAA93BE00F0BBCC /* HYBAboutUsController.swift */; };
+		69B381591AAA93BE00F0BBCC /* HYBAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B381571AAA93BE00F0BBCC /* HYBAboutUsController.xib */; };
+		69B3815E1AAA9BCC00F0BBCC /* HYBCommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3815D1AAA9BCC00F0BBCC /* HYBCommonTool.swift */; };
 		69C6F65C1AA7F1B00078DDB1 /* HYBBaseRequestAnswerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C6F65B1AA7F1B00078DDB1 /* HYBBaseRequestAnswerExt.swift */; };
 		69C6F65E1AA7F3660078DDB1 /* HYBPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C6F65D1AA7F3660078DDB1 /* HYBPostModel.swift */; };
 		69C6F6621AA7FAC60078DDB1 /* HYBPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C6F6601AA7FAC60078DDB1 /* HYBPostCell.swift */; };
@@ -115,6 +120,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690549A91AAC6CCF005130CB /* HYBSoftwareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBSoftwareController.swift; path = Controllers/MoreControllers/SoftwareController/HYBSoftwareController.swift; sourceTree = "<group>"; };
+		690549AB1AAC78D5005130CB /* HYBSoftwareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBSoftwareModel.swift; path = Models/MoreModels/HYBSoftwareModel.swift; sourceTree = "<group>"; };
 		696ED2561AA544550020CC04 /* OSChinaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChinaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696ED25A1AA544550020CC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696ED25B1AA544550020CC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +236,9 @@
 		699E86ED1AA97A1200F57690 /* HYBShareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBShareController.swift; path = Controllers/SynthesizeControllers/SynthesizeDetailControllers/HYBShareController.swift; sourceTree = "<group>"; };
 		699E86EE1AA97A1200F57690 /* HYBShareController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBShareController.xib; path = Controllers/SynthesizeControllers/SynthesizeDetailControllers/HYBShareController.xib; sourceTree = "<group>"; };
 		69AFB71C1AA706550080BA80 /* HYBBlogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBlogModel.swift; path = Models/SynthesizeModels/HYBBlogModel.swift; sourceTree = "<group>"; };
+		69B381561AAA93BE00F0BBCC /* HYBAboutUsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBAboutUsController.swift; path = Controllers/MoreControllers/AboutUsController/HYBAboutUsController.swift; sourceTree = "<group>"; };
+		69B381571AAA93BE00F0BBCC /* HYBAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBAboutUsController.xib; path = Controllers/MoreControllers/AboutUsController/HYBAboutUsController.xib; sourceTree = "<group>"; };
+		69B3815D1AAA9BCC00F0BBCC /* HYBCommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBCommonTool.swift; path = Utilities/Tools/HYBCommonTool.swift; sourceTree = "<group>"; };
 		69C6F65B1AA7F1B00078DDB1 /* HYBBaseRequestAnswerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBBaseRequestAnswerExt.swift; path = Utilities/Network/HYBBaseRequestAnswerExt.swift; sourceTree = "<group>"; };
 		69C6F65D1AA7F3660078DDB1 /* HYBPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBPostModel.swift; path = Models/AnswerModels/HYBPostModel.swift; sourceTree = "<group>"; };
 		69C6F6601AA7FAC60078DDB1 /* HYBPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HYBPostCell.swift; path = Views/Cells/AnswerCells/PostCell/HYBPostCell.swift; sourceTree = "<group>"; };
@@ -281,6 +291,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		690549A41AAC6C36005130CB /* SoftwareController */ = {
+			isa = PBXGroup;
+			children = (
+				690549A91AAC6CCF005130CB /* HYBSoftwareController.swift */,
+			);
+			name = SoftwareController;
+			sourceTree = "<group>";
+		};
 		696ED24D1AA544550020CC04 = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +427,8 @@
 		696ED27F1AA54DB70020CC04 /* MoreControllers */ = {
 			isa = PBXGroup;
 			children = (
+				690549A41AAC6C36005130CB /* SoftwareController */,
+				69B381551AAA938300F0BBCC /* AboutUsController */,
 				696ED2E71AA58F620020CC04 /* LoginController */,
 				696ED2CE1AA560620020CC04 /* HYBMoreController.swift */,
 			);
@@ -440,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				69D440FD1AA6AEC4007A7A18 /* HYBLoginUserModel.swift */,
+				690549AB1AAC78D5005130CB /* HYBSoftwareModel.swift */,
 			);
 			name = MoreModels;
 			sourceTree = "<group>";
@@ -735,6 +756,7 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
+
 		699E868D1AA955F800F57690 /* ExSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,6 +849,14 @@
 				699E86EE1AA97A1200F57690 /* HYBShareController.xib */,
 			);
 			name = SynthesizeDetailControllers;
+
+		69B381551AAA938300F0BBCC /* AboutUsController */ = {
+			isa = PBXGroup;
+			children = (
+				69B381561AAA93BE00F0BBCC /* HYBAboutUsController.swift */,
+				69B381571AAA93BE00F0BBCC /* HYBAboutUsController.xib */,
+			);
+			name = AboutUsController;
 			sourceTree = "<group>";
 		};
 		69C6F65F1AA7FA550078DDB1 /* PostCell */ = {
@@ -851,6 +881,7 @@
 			isa = PBXGroup;
 			children = (
 				69C6F69B1AA841EF0078DDB1 /* HYBUserTool.swift */,
+				69B3815D1AAA9BCC00F0BBCC /* HYBCommonTool.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -993,6 +1024,7 @@
 				69D441181AA6F11B007A7A18 /* HYBNewsCell.xib in Resources */,
 				69D441091AA6D65E007A7A18 /* arrow@2x.png in Resources */,
 				699E86A41AA955F800F57690 /* Info.plist in Resources */,
+				69B381591AAA93BE00F0BBCC /* HYBAboutUsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1043,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				699E86AA1AA955F800F57690 /* String.swift in Sources */,
+				69B381581AAA93BE00F0BBCC /* HYBAboutUsController.swift in Sources */,
 				69C6F65C1AA7F1B00078DDB1 /* HYBBaseRequestAnswerExt.swift in Sources */,
 				699E86D61AA95CF200F57690 /* AFHTTPRequestOperationManager.m in Sources */,
 				69D440FC1AA6AEAC007A7A18 /* HYBBaseModel.swift in Sources */,
@@ -1038,7 +1071,9 @@
 				699E86EF1AA97A1200F57690 /* HYBShareController.swift in Sources */,
 				696ED2981AA5526F0020CC04 /* Alamofire.swift in Sources */,
 				699E86DE1AA95CF200F57690 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				690549AA1AAC6CCF005130CB /* HYBSoftwareController.swift in Sources */,
 				69D4410C1AA6D65E007A7A18 /* RefreshConst.swift in Sources */,
+				690549AC1AAC78D5005130CB /* HYBSoftwareModel.swift in Sources */,
 				69D4410A1AA6D65E007A7A18 /* Refresh.swift in Sources */,
 				69C6F65E1AA7F3660078DDB1 /* HYBPostModel.swift in Sources */,
 				699E86A01AA955F800F57690 /* Dictionary.swift in Sources */,
@@ -1086,6 +1121,7 @@
 				696ED2D81AA57E4C0020CC04 /* Server.swift in Sources */,
 				696ED2CD1AA5600D0020CC04 /* HYBMineController.swift in Sources */,
 				69D441131AA6EA75007A7A18 /* HYBNewsModel.swift in Sources */,
+				69B3815E1AAA9BCC00F0BBCC /* HYBCommonTool.swift in Sources */,
 				69D440F71AA6AC17007A7A18 /* TBXML.m in Sources */,
 				699E869E1AA955F800F57690 /* Bool.swift in Sources */,
 				699E86A61AA955F800F57690 /* NSArray.swift in Sources */,
